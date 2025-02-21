@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Pastelaria</title>
+    <link rel="stylesheet" href="styles.css"> <!-- link rel="stylesheet" href="styles.css"
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Minha Pastelaria</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página Inicial -->
+    <section id="home" class="home">
+        <h2>Bem-vindo à Minha Pastelaria!</h2>
+        <p>Deliciosos pastéis feitos com carinho. Confira nosso cardápio e entre em contato para pedidos!</p>
+        <img src="pastel.jpg" alt="Imagem de um pastel fresco" />
+    </section>
+
+    <!-- Cardápio -->
+    <section id="menu" class="menu">
+        <h2>Nosso Cardápio</h2>
+        <div class="produto">
+            <img src="pastel1.jpg" alt="Pastel de carne">
+            <h3>Pastel de Carne</h3>
+            <p>Pastel crocante recheado com carne moída de alta qualidade.</p>
+            <p>Preço: R$ 8,00</p>
+        </div>
+        <div class="produto">
+            <img src="pastel2.jpg" alt="Pastel de queijo">
+            <h3>Pastel de Queijo</h3>
+            <p>Recheio cremoso de queijo derretido.</p>
+            <p>Preço: R$ 7,00</p>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Tem dúvidas ou quer fazer um pedido? Entre em contato conosco!</p>
+        <ul>
+            <li><a href="https://wa.me/55SEUNUMERODEWHATSAPP" target="_blank">Clique aqui para falar no WhatsApp</a></li>
+            <li>Email: <a href="mailto:contato@minhapastelaria.com">contato@minhapastelaria.com</a></li>
+            <li>Redes Sociais:
+                <ul>
+                    <li><a href="https://www.instagram.com/minhapastelaria" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/minhapastelaria" target="_blank">Facebook</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Minha Pastelaria. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
