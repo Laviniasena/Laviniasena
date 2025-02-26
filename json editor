@@ -1,0 +1,93 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class Pessoa {
+    private String nome;
+    private int idade;
+    private String endereco;
+
+    public Pessoa(String nome, int idade, String endereco) {
+        this.nome = nome;
+        this.idade = idade;
+        this.endereco = endereco;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void andar() {
+        System.out.println(nome + " está andando.");
+    }
+
+    public void falar() {
+        System.out.println(nome + " está falando.");
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{nome='" + nome + "', idade=" + idade + ", endereco='" + endereco + "'}";
+    }
+}
+
+class Carro {
+    private String modelo;
+    private String cor;
+    private int ano;
+
+    public Carro(String modelo, String cor, int ano) {
+        this.modelo = modelo;
+        this.cor = cor;
+        this.ano = ano;
+    }
+
+    public void ligar() {
+        System.out.println("O carro " + modelo + " está ligado.");
+    }
+
+    public void desligar() {
+        System.out.println("O carro " + modelo + " está desligado.");
+    }
+}
+
+class Empresa {
+    private String nome;
+    private String cnpj;
+    private List<Pessoa> empregados;
+
+    public Empresa(String nome, String cnpj) {
+        this.nome = nome;
+        this.cnpj = cnpj;
+        this.empregados = new ArrayList<>();
+    }
+
+    public void adicionarEmpregado(Pessoa p) {
+        empregados.add(p);
+        System.out.println(p.getNome() + " foi contratado pela empresa " + nome);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Pessoa p1 = new Pessoa("Carlos", 30, "Rua A, 123");
+        Pessoa p2 = new Pessoa("Maria", 25, "Rua B, 456");
+
+        Carro c1 = new Carro("Sedan", "Preto", 2020);
+        Empresa e1 = new Empresa("TechCorp", "12345678000199");
+
+        e1.adicionarEmpregado(p1);
+        e1.adicionarEmpregado(p2);
+
+        p1.andar();
+        p2.falar();
+        c1.ligar();
+    }
+}
